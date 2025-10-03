@@ -395,7 +395,6 @@ export const certificates = [
   },
 ];
 
-
 // 🟦 Technical Certificates
 export const technicalCertificates = [
   {
@@ -410,113 +409,114 @@ export const technicalCertificates = [
     id: 2,
     title: "C Language",
     issuer: "Great Learning",
-    date: "Aug 2024",
-    image: "assets/certificates/c-language.png",
+    date: "June 2024",
+    image: "assets/certificates/C_GreatLearning.jpeg",
     link: "https://verify.greatlearning.in/xxxx",
   },
   {
     id: 3,
-    title: "Problem Solving",
-    issuer: "HackerRank",
+    title: "Google Cloud Career Launchpad Generative AI track",
+    issuer: "Google Cloud",
     date: "Aug 2024",
-    image: "assets/certificates/problem-solving.png",
+    image: "assets/certificates/Google Gen AI.jpg",
     link: "https://www.hackerrank.com/certificate/verify/yyyy",
   },
   {
     id: 4,
-    title: "MATLAB Onramp",
-    issuer: "MathWorks",
-    date: "Oct 2024",
-    image: "assets/certificates/matlab-onramp.png",
-    link: "https://matlabacademy.mathworks.com/progress/share/certificate/zzzz",
+    title: "Develop GenAI Apps with Gemini and Streamlit",
+    issuer: "Google Cloud",
+    date: "May 2025",
+    image: "assets/certificates/Develop GenAI Apps with Gemini and Streamlit.jpeg",
+    link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
   },
   {
     id: 5,
-    title: "Statistics Onramp",
-    issuer: "MathWorks",
-    date: "Nov 2024",
-    image: "assets/certificates/statistics-onramp.png",
+    title: "Prompt Design in Vertex AI",
+    issuer: "Google Cloud",
+    date: "May 2025",
+    image: "assets/certificates/Prompt Design in Vertex AI.jpeg",
     link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
   },
   {
     id: 6,
-    title: "Python (Basic)",
-    issuer: "HackerRank",
-    date: "Aug 2024",
-    image: "assets/certificates/python-basic.png",
-    link: "https://www.hackerrank.com/certificate/verify/xxxx",
+    title: "Rich Document Analysis with Gemini Multimodal RAG",
+    issuer: "Google Cloud",
+    date: "May 2025",
+    image: "assets/certificates/Inspect Rich Documents with Gemini Multimodality and Multimodal RAG.jpeg",
+    link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
   },
   {
     id: 7,
-    title: "C Language",
-    issuer: "Great Learning",
-    date: "Aug 2024",
-    image: "assets/certificates/c-language.png",
-    link: "https://verify.greatlearning.in/xxxx",
+    title: "MATLAB Fundamentals",
+    issuer: "MathWorks",
+    date: "Dec 2024",
+    image: "assets/certificates/Matlab Fundamentals.jpeg",
+    link: "https://matlabacademy.mathworks.com/progress/share/certificate/zzzz",
   },
   {
     id: 8,
-    title: "Problem Solving",
-    issuer: "HackerRank",
-    date: "Aug 2024",
-    image: "assets/certificates/problem-solving.png",
-    link: "https://www.hackerrank.com/certificate/verify/yyyy",
+    title: "Statistics Onramp",
+    issuer: "MathWorks",
+    date: "Nov 2024",
+    image: "assets/certificates/Statistics Onramp.jpg",
+    link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
   },
   {
     id: 9,
-    title: "MATLAB Onramp",
+    title: "Explore Data with MATLAB Plots",
     issuer: "MathWorks",
-    date: "Oct 2024",
-    image: "assets/certificates/matlab-onramp.png",
-    link: "https://matlabacademy.mathworks.com/progress/share/certificate/zzzz",
-  },
-  {
-    id: 10,
-    title: "Statistics Onramp",
-    issuer: "MathWorks",
-    date: "Nov 2024",
-    image: "assets/certificates/statistics-onramp.png",
-    link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
-  },
-  {
-    id: 11,
-    title: "Python (Basic)",
-    issuer: "HackerRank",
-    date: "Aug 2024",
-    image: "assets/certificates/python-basic.png",
+    date: "Dec 2024",
+    image: "assets/certificates/Explore Data with MATLAB Plots.jpg",
     link: "https://www.hackerrank.com/certificate/verify/xxxx",
   },
   {
-    id: 12,
-    title: "C Language",
-    issuer: "Great Learning",
-    date: "Aug 2024",
-    image: "assets/certificates/c-language.png",
+    id: 10,
+    title: "Make and Manipulate Matrices with MATLAB",
+    issuer: "MathWorks",
+    date: "Dec 2024",
+    image: "assets/certificates/Make and Manipulate Matrices.jpg",
     link: "https://verify.greatlearning.in/xxxx",
   },
   {
-    id: 13,
-    title: "Problem Solving",
-    issuer: "HackerRank",
-    date: "Aug 2024",
-    image: "assets/certificates/problem-solving.png",
-    link: "https://www.hackerrank.com/certificate/verify/yyyy",
-  },
-  {
-    id: 14,
+    id: 11,
     title: "MATLAB Onramp",
     issuer: "MathWorks",
     date: "Oct 2024",
-    image: "assets/certificates/matlab-onramp.png",
+    image: "assets/certificates/MATLAB Onramp.jpg",
+    link: "https://www.hackerrank.com/certificate/verify/yyyy",
+  },
+  {
+    id: 12,
+    title: "Problem Solving(Basic)",
+    issuer: "HackerRank",
+    date: "Aug 2024",
+    image: "assets/certificates/Problem Solving(Basic).png",
     link: "https://matlabacademy.mathworks.com/progress/share/certificate/zzzz",
   },
   {
-    id: 15,
+    id: 13,
+    title: "Python (Basic)",
+    issuer: "HackerRank",
+    date: "Aug 2024",
+    image: "assets/certificates/Python(Basic).png",
+    link: "https://www.hackerrank.com/certificate/verify/xxxx",
+  },
+  {
+    id: 14,
     title: "Statistics Onramp",
     issuer: "MathWorks",
     date: "Nov 2024",
     image: "assets/certificates/statistics-onramp.png",
     link: "https://matlabacademy.mathworks.com/progress/share/certificate/aaaa",
+  },
+  
+  {
+    id: 15,
+    title: "Tech Talk On Innovating Cloud",
+    issuer: "HPE",
+    date: "Nov 2024",
+    image: "assets/certificates/Tech Talk HPE- IEEE Week.jpg",
+    link: "https://verify.greatlearning.in/xxxx",
   },
 ];
 
@@ -554,3 +554,138 @@ export const nonTechnicalCertificates = [
     link: "https://event-link.com/bbbb",
   },
 ];
+
+export const leetcodeBadges = {
+  annual: [
+    {
+      id: 'annual-1',
+      title: "Annual Badge 2023",
+      image: "assets/leetcode/200_days_2025.gif",
+      date: "2023",
+      description: "Solved 500+ problems in 2023"
+    },
+    {
+      id: 'annual-1',
+      title: "Annual Badge 2023",
+      image: "assets/leetcode/100_days_2025.gif",
+      date: "2023",
+      description: "Solved 500+ problems in 2023"
+    },
+    {
+      id: 'annual-1',
+      title: "Annual Badge 2023",
+      image: "assets/leetcode/50_days_2025.gif",
+      date: "2023",
+      description: "Solved 500+ problems in 2023"
+    },
+    {
+      id: 'annual-1',
+      title: "Annual Badge 2023",
+      image: "assets/leetcode/50_days_2024.gif",
+      date: "2023",
+      description: "Solved 500+ problems in 2023"
+    },
+    // Add more annual badges
+  ],
+  
+  daily: [
+    {
+      id: 1,
+      title: "Monthly Badge - January 2025",
+      image: "assets/leetcode/jan.gif",
+      date: "January 2025",
+      description: "Solved 100+ problems in January 2025"
+    },
+    {
+      id: 2,
+      title: "Monthly Badge - February 2025",
+      image: "assets/leetcode/feb.gif",
+      date: "February 2025",
+      description: "Solved 100+ problems in February 2025"
+    },
+    {
+      id: 3,
+      title: "Monthly Badge - March 2025",
+      image: "assets/leetcode/mar.gif",
+      date: "March 2025",
+      description: "Solved 100+ problems in March 2025"
+    },
+    {
+      id: 4,
+      title: "Monthly Badge - April 2025",
+      image: "assets/leetcode/april.gif",
+      date: "April 2025",
+      description: "Solved 100+ problems in April 2025"
+    },
+    {
+      id: 5,
+      title: "Monthly Badge - May 2025",
+      image: "assets/leetcode/may.gif",
+      date: "May 2025",
+      description: "Solved 100+ problems in May 2025"
+    },
+    {
+      id: 6,
+      title: "Monthly Badge - June 2025",
+      image: "assets/leetcode/jun.gif",
+      date: "June 2025",
+      description: "Solved 100+ problems in June 2025"
+    },
+    {
+      id: 7,
+      title: "Monthly Badge - July 2025",
+      image: "assets/leetcode/july.gif",
+      date: "July 2025",
+      description: "Solved 100+ problems in July 2025"
+    },
+    {
+      id: 8,
+      title: "Monthly Badge - August 2025",
+      image: "assets/leetcode/aug.gif",
+      date: "August 2025",
+      description: "Solved 100+ problems in August 2025"
+    },
+    {
+      id: 9,
+      title: "Monthly Badge - September 2025",
+      image: "assets/leetcode/sept.gif",
+      date: "September 2025",
+      description: "Solved 100+ problems in September 2025"
+    },
+    // {
+    //   id: 10,
+    //   title: "Monthly Badge - October 2025",
+    //   image: "assets/leetcode/oct.gif",
+    //   date: "October 2025",
+    //   description: "Solved 100+ problems in October 2025"
+    // },
+    // {
+    //   id: 11,
+    //   title: "Monthly Badge - November 2025",
+    //   image: "assets/leetcode/nov.gif",
+    //   date: "November 2025",
+    //   description: "Solved 100+ problems in November 2025"
+    // },
+    // {
+    //   id: 12,
+    //   title: "Monthly Badge - December 2025",
+    //   image: "assets/leetcode/dec.gif",
+    //   date: "December 2025",
+    //   description: "Solved 100+ problems in December 2025"
+    // }
+
+    // Add more badges...
+    ],
+
+  
+  studyPlan: [
+    {
+      id: 'study-1',
+      title: "LeetCode 75",
+      image: "assets/leetcode/Top_SQL_50.gif",
+      date: "Completed",
+      description: "Mastered fundamental coding concepts"
+    },
+    // Add more study plan badges
+  ]
+}

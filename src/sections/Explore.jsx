@@ -1,14 +1,21 @@
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { motion } from 'motion/react'
 import Project from '../components/Project'
 import Certificate from '../components/Certificate'
-import { myProjects, technicalCertificates, nonTechnicalCertificates } from '../constants'
+import LeetcodeBadge from '../components/LeetcodeBadge'
+import { myProjects, technicalCertificates, nonTechnicalCertificates, leetcodeBadges } from '../constants'
 import { useState, useEffect } from 'react'
 
 const Explore = () => {
   const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
   const tabFromUrl = searchParams.get('tab')
   const [activeTab, setActiveTab] = useState(tabFromUrl || 'projects')
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab)
+    navigate(`/explore?tab=${tab}`, { replace: true })
+  }
 
   // Scroll to top when component mounts or tab changes
   useEffect(() => {
@@ -29,7 +36,7 @@ const Explore = () => {
         <h2 className="text-2xl font-bold text-white mb-8">Explore</h2>
         <nav className="space-y-2">
           <button
-            onClick={() => setActiveTab('projects')}
+            onClick={() => handleTabChange('projects')}
             className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
               activeTab === 'projects' 
                 ? 'bg-royal text-white' 
@@ -42,7 +49,7 @@ const Explore = () => {
             </span>
           </button>
           <button
-            onClick={() => setActiveTab('technical')}
+            onClick={() => handleTabChange('technical')}
             className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
               activeTab === 'technical' 
                 ? 'bg-royal text-white' 
@@ -55,7 +62,7 @@ const Explore = () => {
             </span>
           </button>
           <button
-            onClick={() => setActiveTab('non-technical')}
+            onClick={() => handleTabChange('non-technical')}
             className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
               activeTab === 'non-technical' 
                 ? 'bg-royal text-white' 
@@ -65,6 +72,19 @@ const Explore = () => {
             <span className="flex items-center gap-3 cursor-pointer">
               <span className="material-symbols-rounded">school</span>
               Non-Technical Certifications
+            </span>
+          </button>
+          <button
+            onClick={() => handleTabChange('leetcode')}
+            className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+              activeTab === 'leetcode' 
+                ? 'bg-royal text-white' 
+                : 'text-gray-400 hover:bg-indigo hover:text-white'
+            }`}
+          >
+            <span className="flex items-center gap-3 cursor-pointer">
+              <span className="material-symbols-rounded">military_tech</span>
+              LeetCode Badges
             </span>
           </button>
         </nav>
@@ -147,6 +167,50 @@ const Explore = () => {
                 {nonTechnicalCertificates.map((cert) => (
                   <Certificate key={cert.id} {...cert} />
                 ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'leetcode' && (
+            <div className="space-y-12">
+              <div className="flex items-center justify-between">
+                <h3 className="text-2xl font-bold">LeetCode Badges</h3>
+                <Link 
+                  to="/" 
+                  className="px-4 py-2 text-sm font-medium transition-all rounded-lg bg-royal hover:bg-lavender"
+                >
+                  Back to Home
+                </Link>
+              </div>
+
+              {/* Annual Badges Section */}
+              <div className="space-y-6">
+                <h4 className="text-xl font-semibold text-white">Annual Badges</h4>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {leetcodeBadges.annual.map((badge) => (
+                    <LeetcodeBadge key={badge.id} {...badge} />
+                  ))}
+                </div>
+              </div>
+
+              {/* Daily Badges Section */}
+              <div className="space-y-6">
+                <h4 className="text-xl font-semibold text-white">Daily Badges</h4>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {leetcodeBadges.daily.map((badge) => (
+                    <LeetcodeBadge key={badge.id} {...badge} />
+                  ))}
+                </div>
+              </div>
+
+              {/* Study Plan Badges Section */}
+              <div className="space-y-6">
+                <h4 className="text-xl font-semibold text-white">Study Plan Badges</h4>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {leetcodeBadges.studyPlan.map((badge) => (
+                    <LeetcodeBadge key={badge.id} {...badge} />
+                  ))}
+                </div>
               </div>
             </div>
           )}

@@ -35,9 +35,9 @@ function App() {
             <div id="experiences">
               <Experiences/>
             </div>
-            <div id="testimonials">
+            {/* <div id="testimonials">
               <Testimonials/>
-            </div>
+            </div> */}
             <div id="certificates">
               <Certificates/>
             </div>
